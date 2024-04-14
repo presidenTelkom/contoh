@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Build Your First App</string>
+    <string name="kembali">kembali</string>
+    <string name="label_nama">Nama</string>
+    <string name="nama_asli">Nama Peminjam</string>
+    <string name="tambah_orang">tambah orang</string>
+    <string name="text_jenis_kelamin">Jenis Kelamin</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="barang_pinjaman">Barang pinjaman</string>
+    <string name="barang">barang</string>
+    <string name="kontak_telephone">Kontak telephone</string>
+    <string name="telephone">Telephone</string>
+    <string name="harga">harga</string>
+    <string name="tanggal_peminjaman">Tanggal Peminjaman</string>
+    <string name="tanggal_tempo">Tanggal Jatuh Tempo</string>
+    <string name="save">save</string>
+    <string name="foto">Foto</string>
+    <string name="list_kosong">Balum ada data</string>
+    <string name="x_diklik">%1$s diklik</string>
+    <string name="tambah_catatan">Tambah catatan</string>
+    <string name="tambah_error">Belum bisa tambah catatan</string>
+    <string name="judul">Judul</string>
+    <string name="isi_catatan">Isi Catatan</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_catatan">Ubah catatan</string>
+</resources>
