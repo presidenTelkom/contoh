@@ -1,4 +1,4 @@
-package org.d3if3068.buildyourfirstapp.ui.theme
+package org.d3if3068.mobpro1.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -38,7 +38,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun BuildYourFirstAppTheme(
+fun BuildYourFirstApp(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,

@@ -1,4 +1,4 @@
-package org.d3if3068.buildyourfirstapp.ui.theme
+package org.d3if3068.mobpro1.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
