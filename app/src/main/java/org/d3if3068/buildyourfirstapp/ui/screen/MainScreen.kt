@@ -1,16 +1,17 @@
-package org.d3if3068.mobpro1.ui.screen
-
 import android.content.res.Configuration
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -40,6 +41,7 @@ import org.d3if3068.buildyourfirstapp.R
 import org.d3if3068.mobpro1.model.Hewan
 import org.d3if3068.mobpro1.network.ApiStatus
 import org.d3if3068.mobpro1.network.HewanApi
+import org.d3if3068.mobpro1.ui.screen.MainViewModel
 import org.d3if3068.mobpro1.ui.theme.BuildYourFirstApp
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -86,6 +88,23 @@ fun ScreenContent(modifier: Modifier) {
                 columns = GridCells.Fixed(2)
             ) {
                 items(data) { ListItem(hewan = it) }
+            }
+        }
+
+        ApiStatus.FAILED -> {
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(text = stringResource(R.string.error))
+                Button(
+                    onClick = { viewModel.retrieveData() },
+                    modifier = Modifier.padding(top = 16.dp),
+                    contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+                ) {
+                    Text(text = stringResource(R.string.try_again))
+                }
             }
         }
     }
