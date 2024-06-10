@@ -131,6 +131,9 @@ fun ScreenContent(modifier: Modifier) {
                 contentAlignment = Alignment.Center
             ) {
                 CircularProgressIndicator()
+                Column {
+
+                }
             }
         }
 
